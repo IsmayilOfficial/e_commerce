@@ -9,7 +9,7 @@ const Product = ({product}) => {
     const classes = useStyles();
     return (
       <Card className={classes.root} >
-          <CardMedia className={classes.media} image = '' title= {product.name}/>
+          <CardMedia className={classes.media} image ={product.image} title= {product.name}/>
           <CardContent>
               <div className={classes.cardContent}>
                   <Typography variant= "h5" gutterBottom>
@@ -18,7 +18,7 @@ const Product = ({product}) => {
                   <Typography variant= "h5" >
                        {product.price}
                   </Typography>  
-                  <Typography varinat = "h2" color = "textSecondary">
+                  <Typography varinat = "body2" color = "textSecondary">
 
                       {product.description}
                       
